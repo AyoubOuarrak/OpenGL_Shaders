@@ -36,7 +36,7 @@ static void validateProgram(GLuint program) {
    // read the shader log from opengl and store it in our buffer.
    glGetShaderInfoLog(program, BUFFER_SIZE, &length, buffer);
 
-   if(length > 0) {
+   if (length > 0) {
       std::cerr << "Program " << program << " Link error: " << buffer << std::endl;
    }
 
